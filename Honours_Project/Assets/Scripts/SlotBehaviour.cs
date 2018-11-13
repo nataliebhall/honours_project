@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Point : MonoBehaviour
+public class SlotBehaviour: MonoBehaviour
 {
-    
 	// Use this for initialization
 	void Start ()
     {
@@ -19,12 +18,11 @@ public class Point : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     { 
-        if (col.gameObject.tag == "dragable")
+        if (col.gameObject.tag == this.gameObject.tag)
         {
-            col.gameObject.transform.SetParent(this.gameObject.transform);
+            col.gameObject.GetComponent<BallBehaviour>().snapped_ = true;
+            col.gameObject.GetComponent<BallBehaviour>().to_snap = this.gameObject.transform.position;
+
         }
-        Debug.Log("andrew is smelly");
     }
-
-
 }

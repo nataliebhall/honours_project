@@ -5,9 +5,11 @@ using UnityEngine;
 public class BallBehaviour : MonoBehaviour
 {
     public float speed_;
-    private bool move_ = false;
+    public bool snapped_ = false;
+    public Vector3 to_snap;
+    bool dragging_ = false;
     private Vector3 target_;
-
+    bool mouse_up_ = true;
 
 	// Use this for initialization
 	void Start ()
@@ -18,21 +20,36 @@ public class BallBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (move_ == true)
+        if (snapped_ == true && dragging_ == false && mouse_up_ == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target_, speed_*Time.deltaTime);
+            transform.position = new Vector3(to_snap.x, to_snap.y, transform.position.z);
         }
-	}
+
+        if (dragging_ == true && mouse_up_ == false)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target_, speed_ * Time.deltaTime);
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            mouse_up_ = true;
+            dragging_ = false;
+        }
+    }
 
     private void OnMouseDrag()
     {
         target_ = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         target_.z = transform.position.z;
-        if (move_ == false)
+        if (dragging_ == false && mouse_up_ == true)
         {
-            move_ = true;
+            dragging_ = true;
+            snapped_ = false;
+            mouse_up_ = false;
         }
-    }
+    } 
+
+    
 }
 
 
