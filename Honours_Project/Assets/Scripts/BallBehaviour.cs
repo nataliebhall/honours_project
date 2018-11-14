@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class BallBehaviour : MonoBehaviour
 {
+    // Variables
     public float speed_;
     public bool snapped_ = false;
     public Vector3 to_snap;
     bool dragging_ = false;
     private Vector3 target_;
     bool mouse_up_ = true;
+
+    // Command attached to block
+    public enum command_types {LEFT, RIGHT, UP, DOWN, SPACE};
+    public command_types command;
 
 	// Use this for initialization
 	void Start ()
