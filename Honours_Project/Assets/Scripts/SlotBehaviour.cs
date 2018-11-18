@@ -7,6 +7,8 @@ public class SlotBehaviour: MonoBehaviour
     bool slotted = false;
     GameObject current_collider;
 
+
+
 	// Use this for initialization
 	void Start ()
     {
@@ -26,8 +28,8 @@ public class SlotBehaviour: MonoBehaviour
             if (slotted == false)
             {
                 current_collider = col.gameObject;
-                col.gameObject.GetComponent<BallBehaviour>().snapped_ = true;
-                col.gameObject.GetComponent<BallBehaviour>().to_snap = this.gameObject.transform.position;
+                col.gameObject.GetComponent<BlockBehaviour>().snapped_ = true;
+                col.gameObject.GetComponent<BlockBehaviour>().to_snap = this.gameObject.transform.position;
                 slotted = true;
             }
         }
@@ -37,7 +39,7 @@ public class SlotBehaviour: MonoBehaviour
     {
         if (col.gameObject == current_collider)
         {
-            col.gameObject.GetComponent<BallBehaviour>().snapped_ = false;
+            col.gameObject.GetComponent<BlockBehaviour>().snapped_ = false;
             current_collider = null;
             slotted = false;
         }

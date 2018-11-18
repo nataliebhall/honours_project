@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: 9d102e9c6cc75e843b2f945b3fffd8a2
+guid: 1db823b7ed8d7a742a165cf4a6e6a508
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hole_0
+    21300000: buttons_0
+    21300002: buttons_1
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -116,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hole_0
+      name: buttons_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 703
-        width: 641
-        height: 641
+        x: 224
+        y: 1059
+        width: 377
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,7 +131,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84dfc94925fe0d4f872c7d91b354f23
+      spriteID: a6ce13dc1100c3f479c84f933ffedf49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons_1
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 824
+        width: 527
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c83391c0fbfeb42978bb949fd46c4d
       vertices: []
       indices: 
       edges: []
@@ -138,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cd3428f15aa24dd44b57fa4a412a16d6
+    spriteID: a935b779f3c190b4cb1bf8c78fad9886
     vertices: []
     indices: 
     edges: []
