@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729fa57ba06369843a427edd650e81c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  command: 0
 --- !u!114 &114102132010714242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,7 +144,6 @@ MonoBehaviour:
   speed_: 100
   snapped_: 0
   to_snap: {x: 0, y: 0, z: 0}
-  command: 1
 --- !u!212 &212653795890113790
 SpriteRenderer:
   m_ObjectHideFlags: 1
