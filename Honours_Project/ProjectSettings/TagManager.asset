@@ -8,6 +8,7 @@ TagManager:
   - snapable
   - command
   - function
+  - canvas
   layers:
   - Default
   - TransparentFX
