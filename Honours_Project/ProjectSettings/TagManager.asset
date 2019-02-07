@@ -9,6 +9,7 @@ TagManager:
   - command
   - function
   - canvas
+  - text
   layers:
   - Default
   - TransparentFX

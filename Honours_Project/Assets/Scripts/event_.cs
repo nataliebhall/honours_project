@@ -5,36 +5,53 @@ using UnityEngine.UI;
 
 public class event_ : MonoBehaviour
 {
+    [System.Serializable]
+    public struct op
+    {
+        [TextArea]
+        public string option_text_;
+
+        public GameObject next_object_;
+    }
+
     [TextArea]
     public string text_;
 
-    public int option_num_;
-
-    public string[] option_text_;
-
-    public GameObject[] next_object_;
+    public op[] option;
 
     Vector3[] positions_ = new Vector3[2];
 
     public GameObject button;
 
+    GameObject[] buttons = new GameObject[2];
+
     // Use this for initialization
     void Start ()
     {
-        positions_[0] = new Vector3(-6.0f, -2.0f, 0.0f);
-        positions_[1] = new Vector3(-7.0f, -3.0f, 0.0f);
 
-        for (int i = 0; i < option_num_; i++)
-        {
-            Instantiate(button, positions_[i], Quaternion.identity, GameObject.FindWithTag("canvas").transform);
-            button.GetComponentInChildren<Text>().text = option_text_[i];
-            button.GetComponent<options_>().next_object = next_object_[i];
-        }
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    public void InstantiateButtons()
     {
-		
-	}
+        positions_[0] = new Vector3(-8.0f, -2.0f, 0.0f);
+        positions_[1] = new Vector3(-8.0f, -3.0f, 0.0f);
+
+
+        for (int i = 0; i < option.Length; i++)
+        {
+            GameObject temp_button;
+            temp_button = Instantiate(button, positions_[i], Quaternion.identity, GameObject.FindWithTag("canvas").transform);
+            temp_button.GetComponentInChildren<Text>().text = option[i].option_text_;
+            temp_button.GetComponent<options_>().next_object = option[i].next_object_;
+            buttons[i] = temp_button;
+        }
+    }
+
+    public void DestroyButtons()
+    {
+        foreach (GameObject g_o_ in buttons)
+        {
+            Destroy(g_o_);
+        }
+    }
 }

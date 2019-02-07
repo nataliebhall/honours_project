@@ -22,6 +22,14 @@ public class options_ : MonoBehaviour
 
     public void ButtonClick()
     {
-        game_.ChangeObject(next_object);
+        if (next_object != null)
+        {
+            game_.ChangeObject(next_object);
+            
+        }
+        else
+        {
+            game_.EndGame();
+        }
     }
 }

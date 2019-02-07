@@ -113,62 +113,196 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &297278641
-Prefab:
+--- !u!1 &32488539
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1608351752}
-    m_Modifications:
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_Name
-      value: event_3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: button
-      value: 
-      objectReference: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6,
-        type: 2}
-    - target: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 1057748013582824, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 32488540}
+  - component: {fileID: 32488541}
+  m_Layer: 0
+  m_Name: sub_event_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &32488540
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4762079010783066, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32488539}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322085141}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &32488541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32488539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: "You scroll through social media. \nSomething catches your eye.\nA female
+    game dev is receiving death threats from some trolls for being outspoken about
+    the lack of female game devs.\n\nYou see this happen most days."
+  option:
+  - option_text_: Finish lunch.
+    next_object_: {fileID: 209751521}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &209751521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1057748013582824, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 209751522}
+  - component: {fileID: 209751523}
+  m_Layer: 0
+  m_Name: sub_event_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &209751522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4762079010783066, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209751521}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322085141}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &209751523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209751521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: You finish your lunch and go back to work.
+  option:
+  - option_text_: Continue.
+    next_object_: {fileID: 1173290868}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &213708790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 213708791}
+  - component: {fileID: 213708792}
+  m_Layer: 0
+  m_Name: the_end
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &213708791
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 213708790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &213708792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 213708790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: END OF DEMO
+  option:
+  - option_text_: Quit
+    next_object_: {fileID: 0}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &223154096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1163052142308764, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 223154097}
+  - component: {fileID: 223154098}
+  m_Layer: 0
+  m_Name: sub_event_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &223154097
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4154868922389026, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223154096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322085141}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223154098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223154096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: What do you want to look at?
+  option:
+  - option_text_: Game news.
+    next_object_: {fileID: 904281995}
+  - option_text_: Social media.
+    next_object_: {fileID: 32488539}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &340834834
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,106 +363,248 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &757897624
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1608351752}
-    m_Modifications:
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: next_object_.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: option_text_.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_Name
-      value: event_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: option_text_.Array.data[0]
-      value: button 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: option_text_.Array.data[1]
-      value: button 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: option_num_
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: button
-      value: 
-      objectReference: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6,
-        type: 2}
-    - target: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-  m_IsPrefabParent: 0
---- !u!114 &757897625 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-    type: 2}
-  m_PrefabInternal: {fileID: 757897624}
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
---- !u!114 &898892205 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-    type: 2}
-  m_PrefabInternal: {fileID: 297278641}
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
---- !u!1 &969390396 stripped
+--- !u!1 &732904852
 GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1874108583598544, guid: 4d0cb5e9506d1fa41b2639777e84fd47,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1608351752}
+  - component: {fileID: 732904853}
+  m_Layer: 0
+  m_Name: day_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &732904853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732904852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: Day One
+  option:
+  - option_text_: Continue.
+    next_object_: {fileID: 969390396}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &736893636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1057748013582824, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 736893637}
+  - component: {fileID: 736893639}
+  m_Layer: 0
+  m_Name: sub_event_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &736893637
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4762079010783066, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736893636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 969390397}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736893639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736893636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: Before you do anything, a coworker comes up behind you and looks over your
+    shoulder. He immediately pulls the mouse and keyboard away from you and begins
+    to fix the problem for you while telling you what you were doing wrong in a patronising
+    tone.
+  option:
+  - option_text_: You say nothing. Continue.
+    next_object_: {fileID: 1322085140}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &811687103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 811687104}
+  - component: {fileID: 811687106}
+  - component: {fileID: 811687105}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &811687104
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 811687103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 977674752}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 28.3, y: 150.1}
+  m_SizeDelta: {x: 1207.2, y: 243.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &811687105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 811687103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 25b8433062126844390fe16dee09dee4, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 300
+    m_Alignment: 6
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &811687106
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 811687103}
+--- !u!1 &904281995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 904281996}
+  - component: {fileID: 904281997}
+  m_Layer: 0
+  m_Name: sub_event_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &904281996
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904281995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322085141}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &904281997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904281995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: There are two articles trending, which one do you want to read?
+  option:
+  - option_text_: '#1'
+    next_object_: {fileID: 1210562543}
+  - option_text_: '#2'
+    next_object_: {fileID: 1795479108}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &969390396
+GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48,
     type: 2}
-  m_PrefabInternal: {fileID: 1361609103}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 969390397}
+  - component: {fileID: 1361609105}
+  m_Layer: 0
+  m_Name: event_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &969390397
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 969390396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1179070710}
+  - {fileID: 1802302832}
+  - {fileID: 736893637}
+  m_Father: {fileID: 1608351752}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &977674748
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,15 +689,111 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 811687104}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &991962605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1057748013582824, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 991962606}
+  - component: {fileID: 991962607}
+  m_Layer: 0
+  m_Name: sub_event_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &991962606
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4762079010783066, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 991962605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1173290869}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &991962607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 991962605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: The meeting concludes. Afterwards, the team lead takes you to one side and
+    asks you to contribute more to the conversation.
+  option:
+  - option_text_: You apologise. Continue.
+    next_object_: {fileID: 213708790}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1069436773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1069436774}
+  - component: {fileID: 1069436775}
+  m_Layer: 0
+  m_Name: sub_event_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1069436774
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069436773}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1173290869}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069436775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069436773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: You still can't seem to attract anyones attention.
+  option:
+  - option_text_: You decide to stay silent for the rest of the meeting. Continue.
+    next_object_: {fileID: 991962605}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1142188588
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +805,7 @@ GameObject:
   - component: {fileID: 1142188591}
   m_Layer: 0
   m_Name: game_controller
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,156 +834,300 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e2faa060a6c28a44ace76dde63e1587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  first_object: {fileID: 969390396}
---- !u!1 &1179070709 stripped
+  first_object: {fileID: 732904852}
+  current_object: {fileID: 0}
+  canvas_text_: {fileID: 811687105}
+--- !u!1 &1173290868
 GameObject:
-  m_PrefabParentObject: {fileID: 1163052142308764, guid: e352dcb61734cb94f9c0881dc0014e48,
-    type: 2}
-  m_PrefabInternal: {fileID: 1361609103}
---- !u!1001 &1361609103
-Prefab:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1608351752}
-    m_Modifications:
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-      propertyPath: m_Name
-      value: event_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: next_object_.Array.data[0]
-      value: 
-      objectReference: {fileID: 1179070709}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: next_object_.Array.data[1]
-      value: 
-      objectReference: {fileID: 1179070709}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: button
-      value: 
-      objectReference: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6,
-        type: 2}
-    - target: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
-        type: 2}
-      propertyPath: option_text_.Array.data[1]
-      value: hellooooo
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e352dcb61734cb94f9c0881dc0014e48, type: 2}
-  m_IsPrefabParent: 0
---- !u!114 &1361609105 stripped
+  m_PrefabParentObject: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1173290869}
+  - component: {fileID: 1173290870}
+  m_Layer: 0
+  m_Name: event_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1173290869
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1173290868}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2136715840}
+  - {fileID: 1517025198}
+  - {fileID: 1069436774}
+  - {fileID: 991962606}
+  m_Father: {fileID: 1608351752}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1173290870
 MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
     type: 2}
-  m_PrefabInternal: {fileID: 1361609103}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1173290868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
---- !u!1001 &1608351751
-Prefab:
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: After lunch, your team lead calls for a meeting
+  option:
+  - option_text_: Continue.
+    next_object_: {fileID: 2136715839}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1179070709
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114488851161428826, guid: 4d0cb5e9506d1fa41b2639777e84fd47,
-        type: 2}
-      propertyPath: events_.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1874108583598544, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-      propertyPath: m_Name
-      value: day_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114488851161428826, guid: 4d0cb5e9506d1fa41b2639777e84fd47,
-        type: 2}
-      propertyPath: events_.Array.data[0]
-      value: 
-      objectReference: {fileID: 1361609105}
-    - target: {fileID: 114488851161428826, guid: 4d0cb5e9506d1fa41b2639777e84fd47,
-        type: 2}
-      propertyPath: events_.Array.data[1]
-      value: 
-      objectReference: {fileID: 757897625}
-    - target: {fileID: 114488851161428826, guid: 4d0cb5e9506d1fa41b2639777e84fd47,
-        type: 2}
-      propertyPath: events_.Array.data[2]
-      value: 
-      objectReference: {fileID: 898892205}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 4d0cb5e9506d1fa41b2639777e84fd47, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1608351752 stripped
+  m_PrefabParentObject: {fileID: 1163052142308764, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1179070710}
+  - component: {fileID: 1179070711}
+  m_Layer: 0
+  m_Name: sub_event_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1179070710
 Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4154868922389026, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179070709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 969390397}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1179070711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179070709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: You have been tasked with implementing a new game mechanic.
+  option:
+  - option_text_: Continue.
+    next_object_: {fileID: 1802302831}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1210562543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1057748013582824, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1210562544}
+  - component: {fileID: 1210562545}
+  m_Layer: 0
+  m_Name: sub_event_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1210562544
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4762079010783066, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210562543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322085141}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210562545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210562543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: 'Article #1: "Major game franchise ''Ninja Club'' criticised for not including
+    any female main characters"
+
+
+    This is all too common nowadays.'
+  option:
+  - option_text_: Look at social media.
+    next_object_: {fileID: 32488539}
+  - option_text_: Finish lunch.
+    next_object_: {fileID: 209751521}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1322085140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1974461951552958, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1322085141}
+  - component: {fileID: 1322085142}
+  m_Layer: 0
+  m_Name: event_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1322085141
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4444720006956896, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322085140}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 223154097}
+  - {fileID: 904281996}
+  - {fileID: 1210562544}
+  - {fileID: 1795479109}
+  - {fileID: 32488540}
+  - {fileID: 209751522}
+  m_Father: {fileID: 1608351752}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1322085142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322085140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: It's your lunch break now, you decide to browse the internet while you eat.
+  option:
+  - option_text_: Continue.
+    next_object_: {fileID: 223154096}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!114 &1361609105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114656806054466768, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 969390396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: You arrive at work and sit at your desk, ready to start the day.
+  option:
+  - option_text_: Continue.
+    next_object_: {fileID: 1179070709}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1517025197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1517025198}
+  - component: {fileID: 1517025199}
+  m_Layer: 0
+  m_Name: sub_event_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1517025198
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1517025197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1173290869}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1517025199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1517025197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: 'Someone interupts you mid sentence. Everyone is listening to them now.
+
+    What do you do now?'
+  option:
+  - option_text_: Try again once coworker finishes talking.
+    next_object_: {fileID: 1069436773}
+  - option_text_: Stay silent.
+    next_object_: {fileID: 991962605}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!4 &1608351752
+Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4528292885320650, guid: 4d0cb5e9506d1fa41b2639777e84fd47,
     type: 2}
-  m_PrefabInternal: {fileID: 1608351751}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732904852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 969390397}
+  - {fileID: 1322085141}
+  - {fileID: 1173290869}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766170014
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,31 +1209,155 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1960111385
+--- !u!1 &1795479108
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 1057748013582824, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1960111386}
+  - component: {fileID: 1795479109}
+  - component: {fileID: 1795479110}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: sub_event_4
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1960111386
+--- !u!4 &1795479109
 Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4762079010783066, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795479108}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322085141}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1795479110
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1960111385}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -2, z: 0}
+  m_GameObject: {fileID: 1795479108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: 'Article #2: " "Female characters are too sexualised" says female gamers"
+
+
+    You agree with them.'
+  option:
+  - option_text_: Look at social media.
+    next_object_: {fileID: 32488539}
+  - option_text_: Finish lunch.
+    next_object_: {fileID: 209751521}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1802302831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1802302832}
+  - component: {fileID: 1802302834}
+  m_Layer: 0
+  m_Name: sub_event_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1802302832
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802302831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1608351752}
-  m_RootOrder: 3
+  m_Father: {fileID: 969390397}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1802302834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802302831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: You begin to implement the mechanic and run the code to test its functionality.
+    An unfamiliar error appears. What do you do?
+  option:
+  - option_text_: Look through the code and try to find any obvious mistakes.
+    next_object_: {fileID: 736893636}
+  - option_text_: Search for the error code in documentation.
+    next_object_: {fileID: 736893636}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &2136715839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1163052142308764, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2136715840}
+  - component: {fileID: 2136715841}
+  m_Layer: 0
+  m_Name: sub_event_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2136715840
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4154868922389026, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136715839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1173290869}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136715841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136715839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: "You sit near the back of the group. \nThe team lead says he called he meeting
+    to brainstorm new ideas for the game.\nWhat do you do?"
+  option:
+  - option_text_: Pitch your idea.
+    next_object_: {fileID: 1517025197}
+  - option_text_: Stay quiet and just listen.
+    next_object_: {fileID: 991962605}
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
