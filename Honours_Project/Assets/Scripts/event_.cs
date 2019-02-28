@@ -12,6 +12,8 @@ public class event_ : MonoBehaviour
         public string option_text_;
 
         public GameObject next_object_;
+
+        public bool interactable;
     }
 
     [TextArea]
@@ -24,6 +26,9 @@ public class event_ : MonoBehaviour
     public GameObject button;
 
     GameObject[] buttons = new GameObject[2];
+
+    // TEMP
+    public int num;
 
     // Use this for initialization
     void Start ()
@@ -43,6 +48,10 @@ public class event_ : MonoBehaviour
             temp_button = Instantiate(button, positions_[i], Quaternion.identity, GameObject.FindWithTag("canvas").transform);
             temp_button.GetComponentInChildren<Text>().text = option[i].option_text_;
             temp_button.GetComponent<options_>().next_object = option[i].next_object_;
+            if (!option[i].interactable)
+            {
+                temp_button.GetComponent<Button>().interactable = false;
+            }
             buttons[i] = temp_button;
         }
     }

@@ -7,11 +7,15 @@ public class options_ : MonoBehaviour
     public GameObject next_object;
 
     game_controller game_;
-    
-	// Use this for initialization
-	void Start ()
+
+    // TEMP
+    int num = 0;
+
+    // Use this for initialization
+    void Start ()
     {
         game_ = GameObject.Find("game_controller").GetComponent<game_controller>();
+
 	}
 	
 	// Update is called once per frame
@@ -19,6 +23,12 @@ public class options_ : MonoBehaviour
     {
 		
 	}
+
+    private void OnMouseOver()
+    {
+        // Do something 
+
+    }
 
     public void ButtonClick()
     {
