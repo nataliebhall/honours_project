@@ -14,6 +14,8 @@ public class event_ : MonoBehaviour
         public GameObject next_object_;
 
         public bool interactable;
+
+        public bool thought;
     }
 
     [TextArea]
@@ -27,30 +29,33 @@ public class event_ : MonoBehaviour
 
     GameObject[] buttons = new GameObject[2];
 
-    // TEMP
-    public int num;
-
     // Use this for initialization
     void Start ()
     {
-
+        
     }
 
     public void InstantiateButtons()
     {
         positions_[0] = new Vector3(-8.0f, -2.0f, 0.0f);
         positions_[1] = new Vector3(-8.0f, -3.0f, 0.0f);
-
-
+        
         for (int i = 0; i < option.Length; i++)
         {
             GameObject temp_button;
             temp_button = Instantiate(button, positions_[i], Quaternion.identity, GameObject.FindWithTag("canvas").transform);
             temp_button.GetComponentInChildren<Text>().text = option[i].option_text_;
             temp_button.GetComponent<options_>().next_object = option[i].next_object_;
-            if (!option[i].interactable)
+
+            if (option[i].thought == true)
             {
-                temp_button.GetComponent<Button>().interactable = false;
+                // Interactable only matters if the option is a thought 
+                // But not all thoughts are non-interactable
+                if (option[i].interactable == false)
+                {
+                    temp_button.GetComponent<Button>().interactable = false;
+                }
+                temp_button.GetComponentInChildren<Text>().color = Color.gray;
             }
             buttons[i] = temp_button;
         }
