@@ -430,6 +430,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 403960297}
+  - component: {fileID: 403960298}
   m_Layer: 0
   m_Name: sub_event_2a
   m_TagString: Untagged
@@ -450,6 +451,29 @@ Transform:
   m_Father: {fileID: 979250469}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403960298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403960296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: She explains that she is a game designer and has been recieving numerous
+    messages of abuse and harassment online.
+  option:
+  - option_text_: '"Why have they started targeting you?"'
+    next_object_: {fileID: 1559130404}
+    interactable: 0
+    thought: 0
+  - option_text_: Keep listening
+    next_object_: {fileID: 1559130404}
+    interactable: 1
+    thought: 1
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &480926578
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +1001,7 @@ Transform:
   m_Children:
   - {fileID: 403960297}
   - {fileID: 1559130405}
+  - {fileID: 1885223332}
   m_Father: {fileID: 282295965}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -992,13 +1017,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: You approach the woman sitting down. She is surrounded by a small group of
-    other attendees. She is talking about her current situation iinvolving online
-    harassment.
+    other attendees. She is talking about her current situation involving online harassment.
   option:
-  - option_text_: Bring a chair over and sit down to listen
-    next_object_: {fileID: 1817282066}
-    interactable: 0
-    thought: 0
+  - option_text_: I'll bring over a chair and listen to her.
+    next_object_: {fileID: 403960296}
+    interactable: 1
+    thought: 1
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &991962605
 GameObject:
@@ -1546,6 +1570,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1559130405}
+  - component: {fileID: 1559130406}
   m_Layer: 0
   m_Name: sub_event_3a
   m_TagString: Untagged
@@ -1566,6 +1591,26 @@ Transform:
   m_Father: {fileID: 979250469}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559130406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559130404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: 'She goes on to explain that she recently wrote an article discussing the
+    female representation in video games. It was met with backlash from a lot of male
+    gamers who bombarded her with abusive messages. '
+  option:
+  - option_text_: 
+    next_object_: {fileID: 0}
+    interactable: 1
+    thought: 1
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1595552577
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,7 +2055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: 'You walk up to the person at the bar. You can see their nametag says "Ally". '
   option:
-  - option_text_: You introduce yourself
+  - option_text_: '"Hi" - you introduce yourself'
     next_object_: {fileID: 0}
     interactable: 0
     thought: 0
@@ -2170,6 +2215,49 @@ MonoBehaviour:
     next_object_: {fileID: 39047779}
     interactable: 1
     thought: 1
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1885223331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1885223332}
+  - component: {fileID: 1885223333}
+  m_Layer: 0
+  m_Name: sub_event_4a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1885223332
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885223331}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 979250469}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885223333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885223331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: 
+  option: []
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1966859152
 GameObject:
