@@ -2053,7 +2053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: 'You walk up to the person at the bar. You can see their nametag says "Ally". '
+  text_: 'You walk up to the person at the bar.  '
   option:
   - option_text_: '"Hi" - you introduce yourself'
     next_object_: {fileID: 0}
