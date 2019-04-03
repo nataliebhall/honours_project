@@ -13,9 +13,7 @@ public class event_ : MonoBehaviour
 
         public GameObject next_object_;
 
-        public bool interactable;
-
-        public bool thought;
+        public bool not_interactable;
     }
 
     [TextArea]
@@ -46,17 +44,13 @@ public class event_ : MonoBehaviour
             temp_button = Instantiate(button, positions_[i], Quaternion.identity, GameObject.FindWithTag("canvas").transform);
             temp_button.GetComponentInChildren<Text>().text = option[i].option_text_;
             temp_button.GetComponent<options_>().next_object = option[i].next_object_;
-
-            if (option[i].thought == true)
+            
+            if (option[i].not_interactable == true)
             {
-                // Interactable only matters if the option is a thought 
-                // But not all thoughts are non-interactable
-                if (option[i].interactable == false)
-                {
-                    temp_button.GetComponent<Button>().interactable = false;
-                }
+                temp_button.GetComponent<Button>().interactable = false;
                 temp_button.GetComponentInChildren<Text>().color = Color.gray;
             }
+            
             buttons[i] = temp_button;
         }
     }

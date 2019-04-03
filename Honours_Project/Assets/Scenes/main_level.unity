@@ -113,53 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &16138830
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 16138831}
-  - component: {fileID: 16138832}
-  m_Layer: 0
-  m_Name: sub_event_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &16138831
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 16138830}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1833762527}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &16138832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 16138830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_: You connect your headset
-  option:
-  - option_text_: '"Hey, the enemy team are coming through the left!"'
-    next_object_: {fileID: 480926578}
-    interactable: 0
-    thought: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &39047779
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +123,7 @@ GameObject:
   - component: {fileID: 39047780}
   - component: {fileID: 39047781}
   m_Layer: 0
-  m_Name: sub_event_8
+  m_Name: sub_event_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,7 +140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &39047781
 MonoBehaviour:
@@ -203,11 +156,64 @@ MonoBehaviour:
   text_: You turn off the game. Just before you go to switch off your console, you
     get a message from one of the players in your team.
   option:
-  - option_text_: I'll see what it says
+  - option_text_: Read the mesage.
     next_object_: {fileID: 1096624182}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &96911308 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1290241983909154, guid: 25d7cffbc59da5448ae2ec1b27e38ac8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1659168997}
+--- !u!1 &236268686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 236268688}
+  - component: {fileID: 236268687}
+  m_Layer: 0
+  m_Name: sub_event_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &236268687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 236268686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: '"These events remind us that we are not alone and that even though women
+    and gender queer people are under-represented in this industry we do exist!"'
+  option:
+  - option_text_: '--->'
+    next_object_: {fileID: 1427039400}
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!4 &236268688
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 236268686}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1966859154}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &261998042
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,10 +244,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: AT HOME
   option:
-  - option_text_: Ah home sweet home!
+  - option_text_: Continue.
     next_object_: {fileID: 1519538320}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &261998044
 Transform:
@@ -286,7 +291,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 979250469}
+  - {fileID: 403960297}
+  - {fileID: 1559130405}
+  - {fileID: 1885223332}
   - {fileID: 1817282067}
+  - {fileID: 1150352669}
+  - {fileID: 869912260}
+  - {fileID: 1391810130}
+  - {fileID: 1319825720}
   m_Father: {fileID: 1843881925}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -304,61 +316,9 @@ MonoBehaviour:
   text_: You are attending a meetup for women in games. There is some time before
     the scheduled speaker to talk to some of te attendees.
   option:
-  - option_text_: Speak to the women sitting near the window
+  - option_text_: Walk over to the women who appears to be telling a story.
     next_object_: {fileID: 979250468}
-    interactable: 0
-    thought: 0
-  - option_text_: Go over to the person standing at the bar
-    next_object_: {fileID: 1817282066}
-    interactable: 0
-    thought: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
---- !u!1 &296061900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 296061901}
-  - component: {fileID: 296061902}
-  m_Layer: 0
-  m_Name: sub_event_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &296061901
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 296061900}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1833762527}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &296061902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 296061900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_: 'You load up the game and start playing. '
-  option:
-  - option_text_: Almost got them...I've got to hold this base...Yes! Got it!
-    next_object_: {fileID: 1395909716}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &340834834
 GameObject:
@@ -432,7 +392,7 @@ GameObject:
   - component: {fileID: 403960297}
   - component: {fileID: 403960298}
   m_Layer: 0
-  m_Name: sub_event_2a
+  m_Name: sub_event_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,8 +408,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 979250469}
-  m_RootOrder: 0
+  m_Father: {fileID: 282295965}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &403960298
 MonoBehaviour:
@@ -467,12 +427,10 @@ MonoBehaviour:
   option:
   - option_text_: '"Why have they started targeting you?"'
     next_object_: {fileID: 1559130404}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
   - option_text_: Keep listening
     next_object_: {fileID: 1559130404}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &480926578
 GameObject:
@@ -484,7 +442,7 @@ GameObject:
   - component: {fileID: 480926579}
   - component: {fileID: 480926580}
   m_Layer: 0
-  m_Name: sub_event_5
+  m_Name: sub_event_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,7 +459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &480926580
 MonoBehaviour:
@@ -516,10 +474,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: '"OH MY GOD A GIRL!!"'
   option:
-  - option_text_: uh yes I'm a girl..
+  - option_text_: '"uh yes I''m a girl.."'
     next_object_: {fileID: 0}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &529807168
 GameObject:
@@ -553,12 +510,10 @@ MonoBehaviour:
   option:
   - option_text_: The article about a game that was recently announced
     next_object_: {fileID: 1417884252}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
   - option_text_: The article about a big games studio
     next_object_: {fileID: 861824432}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &529807170
 Transform:
@@ -610,12 +565,10 @@ MonoBehaviour:
   - option_text_: Even when we have female characters they are usually a sexualised
       love interest for the main character!!
     next_object_: {fileID: 0}
-    interactable: 0
-    thought: 1
+    not_interactable: 1
   - option_text_: Okay so nothing good in the news then...
     next_object_: {fileID: 907566069}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &548409934
 Transform:
@@ -663,8 +616,7 @@ MonoBehaviour:
   option:
   - option_text_: Continue.
     next_object_: {fileID: 969390396}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &736893636
 GameObject:
@@ -716,12 +668,10 @@ MonoBehaviour:
   - option_text_: '"Excuse me, sorry, I was trying to do this myself if you wouldn''t
       mind"'
     next_object_: {fileID: 0}
-    interactable: 0
-    thought: 1
+    not_interactable: 1
   - option_text_: oh, umm, I guess this is okay..?
     next_object_: {fileID: 1173290868}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!114 &811687105 stripped
 MonoBehaviour:
@@ -779,12 +729,57 @@ MonoBehaviour:
   option:
   - option_text_: Why can't there be more variety in female characters?
     next_object_: {fileID: 0}
-    interactable: 0
-    thought: 1
+    not_interactable: 1
   - option_text_: Read the next article
     next_object_: {fileID: 1407129807}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &869912259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 869912260}
+  - component: {fileID: 869912261}
+  m_Layer: 0
+  m_Name: sub_event_7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869912260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 869912259}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 282295965}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &869912261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 869912259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: They sympathise with you and explain that recently this has started happening
+    to them since they started presenting themselves as feminine.
+  option:
+  - option_text_: You ask what sort of things they've experienced.
+    next_object_: {fileID: 1391810129}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &882821455
 GameObject:
@@ -796,7 +791,7 @@ GameObject:
   - component: {fileID: 882821456}
   - component: {fileID: 882821457}
   m_Layer: 0
-  m_Name: sub_event_6
+  m_Name: sub_event_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,7 +808,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &882821457
 MonoBehaviour:
@@ -828,11 +823,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: '"Is this your boyfriends account? I bet you don''t even play games!"'
   option:
-  - option_text_: '"I''m playing right now, this is my account! The enemy are taking
-      this base, I need some more people here!"'
-    next_object_: {fileID: 0}
-    interactable: 1
-    thought: 1
+  - option_text_: '"I''m playing right now, this is my account"'
+    next_object_: {fileID: 1863815220}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &907566069
 GameObject:
@@ -862,12 +855,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: 'You decide to go to bed. '
+  text_: You decide to turn off your computer and go do something else instead.
   option:
-  - option_text_: Hopefully tomorrow will be better.
-    next_object_: {fileID: 0}
-    interactable: 1
-    thought: 1
+  - option_text_: Continue.
+    next_object_: {fileID: 1843881923}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &907566071
 Transform:
@@ -983,7 +975,7 @@ GameObject:
   - component: {fileID: 979250469}
   - component: {fileID: 979250470}
   m_Layer: 0
-  m_Name: sub_event_1a
+  m_Name: sub_event_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,10 +990,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 403960297}
-  - {fileID: 1559130405}
-  - {fileID: 1885223332}
+  m_Children: []
   m_Father: {fileID: 282295965}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1021,8 +1010,7 @@ MonoBehaviour:
   option:
   - option_text_: I'll bring over a chair and listen to her.
     next_object_: {fileID: 403960296}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &991962605
 GameObject:
@@ -1069,10 +1057,12 @@ MonoBehaviour:
   text_: The meeting concludes. Afterwards, the team lead takes you to one side and
     asks you to contribute more to the conversation.
   option:
+  - option_text_: '"I tried but other people kept interrupting me!"'
+    next_object_: {fileID: 261998042}
+    not_interactable: 1
   - option_text_: '"Oh sorry, I''ll try harder"'
     next_object_: {fileID: 261998042}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1069436773
 GameObject:
@@ -1120,8 +1110,7 @@ MonoBehaviour:
   option:
   - option_text_: Oh okay, I guess no one wanted to listen to me...
     next_object_: {fileID: 991962605}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1096624182
 GameObject:
@@ -1133,7 +1122,7 @@ GameObject:
   - component: {fileID: 1096624183}
   - component: {fileID: 1096624184}
   m_Layer: 0
-  m_Name: sub_event_9
+  m_Name: sub_event_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1150,7 +1139,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1096624184
 MonoBehaviour:
@@ -1163,13 +1152,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: '"Go back to the kitchen you slut. your not a real gamer, your just a stupid
-    girl"'
+  text_: '"Go back to the kitchen and make me a sandwich. You''re not a real gamer,
+    you''re just a stupid girl"'
   option:
-  - option_text_: That's really pleasant..
-    next_object_: {fileID: 2015513074}
-    interactable: 1
-    thought: 1
+  - option_text_: You report the message and turn the console off.
+    next_object_: {fileID: 1519538320}
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1150352668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1150352669}
+  - component: {fileID: 1150352670}
+  m_Layer: 0
+  m_Name: sub_event_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150352669
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150352668}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 282295965}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150352670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150352668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: They start talking to you about their work.
+  option:
+  - option_text_: '"I''ve been having some issues at work" - you explain the events
+      that have happened to you with collegues taking over your work space etc.'
+    next_object_: {fileID: 869912259}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1173290868
 GameObject:
@@ -1222,8 +1257,7 @@ MonoBehaviour:
   option:
   - option_text_: I'll head over there now.
     next_object_: {fileID: 2136715839}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1179070709
 GameObject:
@@ -1271,8 +1305,104 @@ MonoBehaviour:
   option:
   - option_text_: Let's get to work...
     next_object_: {fileID: 1802302831}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1265977107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1265977109}
+  - component: {fileID: 1265977108}
+  m_Layer: 0
+  m_Name: sub_event_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1265977108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265977107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: '"Educate your collegues about the unfair treatment of under-represented
+    genders. Get your department lead onboard to educate themselves and their teams."'
+  option:
+  - option_text_: '--->'
+    next_object_: {fileID: 1822651311}
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!4 &1265977109
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265977107}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1966859154}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1319825719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1319825720}
+  - component: {fileID: 1319825721}
+  m_Layer: 0
+  m_Name: sub_event_9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1319825720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319825719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 282295965}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1319825721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319825719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: They say that one of the more common issues they face is being talked over
+    in meetings.
+  option:
+  - option_text_: '"That happens to me all the time!" - you continue talking to them
+      and comparing experiences until it''s time for the speaker''s presentation.'
+    next_object_: {fileID: 0}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!114 &1361609105
 MonoBehaviour:
@@ -1288,10 +1418,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: You arrive at work, ready to start the day.
   option:
-  - option_text_: Head over to your workstation
+  - option_text_: Head over to your workstation.
     next_object_: {fileID: 1179070709}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1391810129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1391810130}
+  - component: {fileID: 1391810131}
+  m_Layer: 0
+  m_Name: sub_event_8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1391810130
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391810129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 282295965}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1391810131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391810129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: 'They say they no longer get head-hunted, they get less invitations for job
+    interviews and job offers are now for more juior positions even though they had
+    experience in senior roles. '
+  option:
+  - option_text_: You are quite shocked at the difference in their experiences but
+      keep listening.
+    next_object_: {fileID: 1319825719}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1395909716
 GameObject:
@@ -1303,7 +1481,7 @@ GameObject:
   - component: {fileID: 1395909717}
   - component: {fileID: 1395909718}
   m_Layer: 0
-  m_Name: sub_event_3
+  m_Name: sub_event_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1320,7 +1498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1395909718
 MonoBehaviour:
@@ -1335,10 +1513,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: Some of the people on your team are talking to eachother on headsets.
   option:
-  - option_text_: I'll connect mine so we can talk about strategy!
-    next_object_: {fileID: 16138830}
-    interactable: 1
-    thought: 1
+  - option_text_: Connect your headset so you can talk with them.
+    next_object_: {fileID: 480926578}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1407129807
 GameObject:
@@ -1388,12 +1565,10 @@ MonoBehaviour:
   - option_text_: So many games don't have the option of a female playable character.
       Women play games too!
     next_object_: {fileID: 0}
-    interactable: 0
-    thought: 1
+    not_interactable: 1
   - option_text_: Okay so nothing good in the news...
     next_object_: {fileID: 907566069}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1417884252
 GameObject:
@@ -1429,12 +1604,10 @@ MonoBehaviour:
   - option_text_: So many games don't have the option of a female playable character.
       Women play games too!
     next_object_: {fileID: 0}
-    interactable: 0
-    thought: 1
+    not_interactable: 1
   - option_text_: Read the next article
     next_object_: {fileID: 548409932}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &1417884254
 Transform:
@@ -1450,6 +1623,104 @@ Transform:
   - {fileID: 548409934}
   m_Father: {fileID: 1519538322}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1420369246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1420369248}
+  - component: {fileID: 1420369247}
+  m_Layer: 0
+  m_Name: sub_event_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1420369247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420369246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: '"We can do this by calling out unfair treatment of yourself as well as your
+    collegues! It''s important to let your collegues know you''re an ally."'
+  option:
+  - option_text_: '--->'
+    next_object_: {fileID: 1265977107}
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!4 &1420369248
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420369246}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1966859154}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1427039400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1427039402}
+  - component: {fileID: 1427039401}
+  m_Layer: 0
+  m_Name: sub_event_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1427039401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427039400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: '"Today I want to talk about encouraging the fair treatment of all genders
+    in the games industry."'
+  option:
+  - option_text_: '--->'
+    next_object_: {fileID: 1420369246}
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!4 &1427039402
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427039400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1966859154}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1517025197
 GameObject:
@@ -1499,13 +1770,11 @@ MonoBehaviour:
   option:
   - option_text_: Maybe he didn't hear me? I'll try again once he is finished.
     next_object_: {fileID: 1069436773}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   - option_text_: I don't think anyone was interested in my idea. I'll just stay quiet
       from now on.
     next_object_: {fileID: 991962605}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1519538320
 GameObject:
@@ -1536,13 +1805,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You decide to go on your computer and have a look at the games section of
-    the news
+  text_: You decide to go on your computer and have a look at the latest news in the
+    games industry
   option:
   - option_text_: Maybe there will be something positive in the news today...
-    next_object_: {fileID: 0}
-    interactable: 1
-    thought: 1
+    next_object_: {fileID: 529807168}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &1519538322
 Transform:
@@ -1572,7 +1840,7 @@ GameObject:
   - component: {fileID: 1559130405}
   - component: {fileID: 1559130406}
   m_Layer: 0
-  m_Name: sub_event_3a
+  m_Name: sub_event_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1584,12 +1852,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1559130404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 979250469}
-  m_RootOrder: 1
+  m_Father: {fileID: 282295965}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1559130406
 MonoBehaviour:
@@ -1606,57 +1874,10 @@ MonoBehaviour:
     female representation in video games. It was met with backlash from a lot of male
     gamers who bombarded her with abusive messages. '
   option:
-  - option_text_: 
-    next_object_: {fileID: 0}
-    interactable: 1
-    thought: 1
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
---- !u!1 &1595552577
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1595552578}
-  - component: {fileID: 1595552579}
-  m_Layer: 0
-  m_Name: sub_event_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1595552578
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1595552577}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1833762527}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1595552579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1595552577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_: 'You load up the game and start playing. '
-  option:
-  - option_text_: I've been looking forward to this all day
-    next_object_: {fileID: 296061900}
-    interactable: 1
-    thought: 1
+  - option_text_: Another woman in the group says something similar happened to her.
+      You hear murmers of "me too" from the other attendees gathered around you.
+    next_object_: {fileID: 1885223331}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &1608351752
 Transform:
@@ -1716,16 +1937,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: There are two articles trending, which one do you want to read?
+  text_: '"Thank you all for coming. It''s great to see so many of you here!"'
   option:
-  - option_text_: The article about a game that was recently announced
-    next_object_: {fileID: 0}
-    interactable: 0
-    thought: 0
-  - option_text_: The article about a big games studio
-    next_object_: {fileID: 0}
-    interactable: 0
-    thought: 0
+  - option_text_: '--->'
+    next_object_: {fileID: 236268686}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1001 &1659168997
 Prefab:
@@ -1769,6 +1985,11 @@ Prefab:
     - target: {fileID: 1290241983909154, guid: 25d7cffbc59da5448ae2ec1b27e38ac8, type: 2}
       propertyPath: m_Name
       value: the_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 114070366804703104, guid: 25d7cffbc59da5448ae2ec1b27e38ac8,
+        type: 2}
+      propertyPath: text_
+      value: Thank you for playing!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25d7cffbc59da5448ae2ec1b27e38ac8, type: 2}
@@ -1875,6 +2096,41 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1766170017}
+    - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 746.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -165.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 243.70001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f19b6c9b26b433f45b0fe4ca6e7fda69, type: 2}
   m_IsPrefabParent: 0
@@ -2006,12 +2262,10 @@ MonoBehaviour:
   option:
   - option_text_: I'll look through the code and try to find any obvious mistakes.
     next_object_: {fileID: 736893636}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   - option_text_: I should search for the error code in documentation.
     next_object_: {fileID: 736893636}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1817282066
 GameObject:
@@ -2023,7 +2277,7 @@ GameObject:
   - component: {fileID: 1817282067}
   - component: {fileID: 1817282068}
   m_Layer: 0
-  m_Name: sub_event_1b
+  m_Name: sub_event_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,7 +2294,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 282295965}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1817282068
 MonoBehaviour:
@@ -2055,11 +2309,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: 'You walk up to the person at the bar.  '
   option:
-  - option_text_: '"Hi" - you introduce yourself'
-    next_object_: {fileID: 0}
-    interactable: 0
-    thought: 0
+  - option_text_: Order a drink at the bar and introduce yourself to the person at
+      the bar.
+    next_object_: {fileID: 1150352668}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!1 &1822651311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1745993427369288, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1822651313}
+  - component: {fileID: 1822651312}
+  m_Layer: 0
+  m_Name: sub_event_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1822651312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822651311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_: '"Most importantly, don''t disappear into the background, speak up and lean
+    in. The next generation of game developers needs to be more diverse."'
+  option:
+  - option_text_: '--->'
+    next_object_: {fileID: 96911308}
+    not_interactable: 0
+  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+--- !u!4 &1822651313
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4216610820545962, guid: e352dcb61734cb94f9c0881dc0014e48,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822651311}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1966859154}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833762526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,16 +2389,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1595552578}
-  - {fileID: 296061901}
   - {fileID: 1395909717}
-  - {fileID: 16138831}
   - {fileID: 480926579}
   - {fileID: 882821456}
   - {fileID: 1863815221}
   - {fileID: 39047780}
   - {fileID: 1096624183}
-  - {fileID: 2015513075}
   m_Father: {fileID: 261998044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2110,12 +2409,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You decide to play a game online to relax.
+  text_: It's your day off and you decde to play a game. You turn on the console and
+    load up a game.
   option:
-  - option_text_: I think I'll play this one
-    next_object_: {fileID: 1595552577}
-    interactable: 1
-    thought: 1
+  - option_text_: Start Playing.
+    next_object_: {fileID: 1395909716}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1843881923
 GameObject:
@@ -2147,10 +2446,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: AT THE DEV CONFERENCE
   option:
-  - option_text_: I've been waiting all week for this!
+  - option_text_: Continue.
     next_object_: {fileID: 1966859152}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &1843881925
 Transform:
@@ -2178,7 +2476,7 @@ GameObject:
   - component: {fileID: 1863815221}
   - component: {fileID: 1863815222}
   m_Layer: 0
-  m_Name: sub_event_7
+  m_Name: sub_event_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2195,7 +2493,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1863815222
 MonoBehaviour:
@@ -2209,12 +2507,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: "Your character gets shot and you have to be revived by your team mates.
-    \n\n\"Stupid bitch fucking died! Girls can't play games, their too fucking stupid\""
+    \n\n\"Stupid bitch fucking died! Girls can't play games, they're too fucking stupid\""
   option:
-  - option_text_: 'What the hell? '
+  - option_text_: '"What the hell?"'
     next_object_: {fileID: 39047779}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1885223331
 GameObject:
@@ -2226,7 +2523,7 @@ GameObject:
   - component: {fileID: 1885223332}
   - component: {fileID: 1885223333}
   m_Layer: 0
-  m_Name: sub_event_4a
+  m_Name: sub_event_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2242,8 +2539,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 979250469}
-  m_RootOrder: 2
+  m_Father: {fileID: 282295965}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1885223333
 MonoBehaviour:
@@ -2256,8 +2553,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: 
-  option: []
+  text_: With tears in her eyes, she talks about having to change address, cancel
+    bank cards and change her number due to the threats being made against her.
+  option:
+  - option_text_: You notice she doesn't want to talk about it anymore, so leave her
+      alone with her friends.
+    next_object_: {fileID: 1817282066}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1966859152
 GameObject:
@@ -2288,13 +2590,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You decide to go on your computer and have a look at the games section of
-    the news
+  text_: The keynote speaker stands infront of the group as everyone sits down.
   option:
-  - option_text_: Maybe there will be something positive in the news today...
-    next_object_: {fileID: 0}
-    interactable: 1
-    thought: 1
+  - option_text_: '--->'
+    next_object_: {fileID: 1653881698}
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &1966859154
 Transform:
@@ -2308,56 +2608,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1653881699}
+  - {fileID: 236268688}
+  - {fileID: 1427039402}
+  - {fileID: 1420369248}
+  - {fileID: 1265977109}
+  - {fileID: 1822651313}
   m_Father: {fileID: 1843881925}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2015513074
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2015513075}
-  - component: {fileID: 2015513076}
-  m_Layer: 0
-  m_Name: sub_event_10
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2015513075
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2015513074}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1833762527}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2015513076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2015513074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_: You report the player and turn off the console.
-  option:
-  - option_text_: I don't really want to play this game anymore.
-    next_object_: {fileID: 1519538320}
-    interactable: 1
-    thought: 1
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &2136715839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,10 +2663,8 @@ MonoBehaviour:
   option:
   - option_text_: '"I had this idea..."'
     next_object_: {fileID: 1517025197}
-    interactable: 0
-    thought: 0
+    not_interactable: 0
   - option_text_: I'll just listen to everyone else, my idea isn't very good anyway..
     next_object_: {fileID: 991962605}
-    interactable: 1
-    thought: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
