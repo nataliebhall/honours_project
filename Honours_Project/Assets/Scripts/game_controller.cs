@@ -8,7 +8,7 @@ public class game_controller : MonoBehaviour
 {
     public GameObject first_object;
     public GameObject current_object;
-    public Text canvas_text_;
+    public Text canvas_text;
 
     // Use this for initialization
     void Start ()
@@ -22,7 +22,7 @@ public class game_controller : MonoBehaviour
     {
         if (current_object)
         {
-            canvas_text_.text = current_object.GetComponent<event_>().text_;
+            canvas_text.text = current_object.GetComponent<event_>().text_;
         }
     }
 
