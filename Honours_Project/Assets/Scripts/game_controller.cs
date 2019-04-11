@@ -14,23 +14,25 @@ public class game_controller : MonoBehaviour
     void Start ()
     {
         current_object = first_object;
-        current_object.GetComponent<event_>().InstantiateButtons();
+        SetUpNewEvent();
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (current_object)
-        {
-            canvas_text.text = current_object.GetComponent<event_>().text_;
-        }
+    }
+
+    void SetUpNewEvent()
+    {
+        current_object.GetComponent<event_>().InstantiateButtons();
+        canvas_text.text = current_object.GetComponent<event_>().text_;
     }
 
     public void ChangeObject(GameObject obj)
     {
         current_object.GetComponent<event_>().DestroyButtons();
         current_object = obj;
-        current_object.GetComponent<event_>().InstantiateButtons();
+        SetUpNewEvent();
     }
     
     public void EndGame()

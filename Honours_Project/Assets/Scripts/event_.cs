@@ -30,14 +30,13 @@ public class event_ : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        
     }
 
     public void InstantiateButtons()
     {
         positions_[0] = new Vector3(-8.0f, -2.0f, 0.0f);
         positions_[1] = new Vector3(-8.0f, -3.0f, 0.0f);
-        
+
         for (int i = 0; i < option.Length; i++)
         {
             GameObject temp_button;
@@ -48,7 +47,6 @@ public class event_ : MonoBehaviour
             if (option[i].not_interactable == true)
             {
                 temp_button.GetComponent<Button>().interactable = false;
-                temp_button.GetComponentInChildren<Text>().color = Color.gray;
             }
             
             buttons[i] = temp_button;
