@@ -156,7 +156,7 @@ MonoBehaviour:
   text_: You turn off the game. Just before you go to switch off your console, you
     get a message from one of the players in your team.
   option:
-  - option_text_: Read the mesage.
+  - option_text_: Read the message.
     next_object_: {fileID: 1096624182}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: There are two articles trending, which one do you want to read?
+  text_: There are two articles trending.
   option:
   - option_text_: The article about a game that was recently announced
     next_object_: {fileID: 1417884252}
@@ -557,16 +557,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: '"Female characters are too sexualised" says female gamers"
-
-
-    You agree with them.'
+  text_: '"Female characters are too sexualised" says female gamers"'
   option:
-  - option_text_: Even when we have female characters they are usually a sexualised
-      love interest for the main character!!
+  - option_text_: Even when there are female characters, they are usually sexualised.
     next_object_: {fileID: 0}
     not_interactable: 1
-  - option_text_: Okay so nothing good in the news then...
+  - option_text_: Continue.
     next_object_: {fileID: 907566069}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -665,11 +661,8 @@ MonoBehaviour:
     to fix the problem for you while telling you what you were doing wrong in a patronising
     tone.
   option:
-  - option_text_: '"Excuse me, sorry, I was trying to do this myself if you wouldn''t
-      mind"'
-    next_object_: {fileID: 0}
-    not_interactable: 1
-  - option_text_: oh, umm, I guess this is okay..?
+  - option_text_: You're frustrated that he would do that when you were fine fixing
+      the problem yourself. But he has been here longer so you don't say anything.
     next_object_: {fileID: 1173290868}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1017,34 +1010,6 @@ MonoBehaviour:
     next_object_: {fileID: 403960296}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
---- !u!1 &986404372
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 986404373}
-  m_Layer: 0
-  m_Name: NextObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &986404373
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 986404372}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991962605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,12 +1055,9 @@ MonoBehaviour:
   text_: The meeting concludes. Afterwards, the team lead takes you to one side and
     asks you to contribute more to the conversation.
   option:
-  - option_text_: '"I tried but other people kept interrupting me!"'
+  - option_text_: You don't want to complain about your fellow peers. "I'll try harder"
     next_object_: {fileID: 261998042}
     not_interactable: 1
-  - option_text_: '"Oh sorry, I''ll try harder"'
-    next_object_: {fileID: 261998042}
-    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1069436773
 GameObject:
@@ -1139,9 +1101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You still can't seem to attract anyones attention.
+  text_: You continue to be interrupted and spoken over.
   option:
-  - option_text_: Oh okay, I guess no one wanted to listen to me...
+  - option_text_: Give up trying to get your voice heard.
     next_object_: {fileID: 991962605}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1288,7 +1250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: After lunch, your team lead calls for a meeting
   option:
-  - option_text_: I'll head over there now.
+  - option_text_: Head over there now.
     next_object_: {fileID: 2136715839}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1340,55 +1302,6 @@ MonoBehaviour:
     next_object_: {fileID: 1802302831}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
---- !u!1 &1249939824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1249939826}
-  - component: {fileID: 1249939825}
-  m_Layer: 0
-  m_Name: ExampleEvent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1249939825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1249939824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_: Event Description
-  option:
-  - option_text_: Option One
-    next_object_: {fileID: 986404372}
-    not_interactable: 0
-  - option_text_: Option Two
-    next_object_: {fileID: 0}
-    not_interactable: 1
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
---- !u!4 &1249939826
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1249939824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1265977107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,7 +1506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: Some of the people on your team are talking to eachother on headsets.
+  text_: Some of the people on your team are talking to each other on headsets.
   option:
   - option_text_: Connect your headset so you can talk with them.
     next_object_: {fileID: 480926578}
@@ -1680,14 +1593,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: '"Major game franchise ''Ninja Club'' criticised for not including any female
-    main characters in the latest installment"'
+  text_: '"Major game franchise criticised for not including any playable female characters
+    in the latest installment"'
   option:
-  - option_text_: So many games don't have the option of a female playable character.
-      Women play games too!
+  - option_text_: So many games don't have the option of being able to play as a female
+      character, despite half of gamers being female.
     next_object_: {fileID: 0}
     not_interactable: 1
-  - option_text_: Read the next article
+  - option_text_: Read the next article.
     next_object_: {fileID: 548409932}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1846,15 +1759,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: 'Someone interupts you mid sentence. Everyone is listening to them now.
-
-    What do you do now?'
+  text_: Someone interupts you mid sentence. Everyone is listening to them now.
   option:
   - option_text_: Maybe he didn't hear me? I'll try again once he is finished.
     next_object_: {fileID: 1069436773}
     not_interactable: 0
-  - option_text_: I don't think anyone was interested in my idea. I'll just stay quiet
-      from now on.
+  - option_text_: I don't think anyone was interested in my idea. I'll just stay quiet.
     next_object_: {fileID: 991962605}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1887,10 +1797,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You decide to go on your computer and have a look at the latest news in the
-    games industry
+  text_: You decide to go on your computer and have a look at the latest news in games.
   option:
-  - option_text_: Maybe there will be something positive in the news today...
+  - option_text_: Log on and open up the internet app.
     next_object_: {fileID: 529807168}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -2345,12 +2254,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: You begin to implement the mechanic and run the code to test its functionality.
-    An unfamiliar error appears. What do you do?
+    An unfamiliar error appears.
   option:
-  - option_text_: I'll look through the code and try to find any obvious mistakes.
+  - option_text_: Look through the code and try to find any obvious mistakes.
     next_object_: {fileID: 736893636}
     not_interactable: 0
-  - option_text_: I should search for the error code in documentation.
+  - option_text_: Search for the error code in documentation.
     next_object_: {fileID: 736893636}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -2497,7 +2406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: It's your day off and you decde to play a game. You turn on the console and
-    load up a game.
+    load up an online shooter.
   option:
   - option_text_: Start Playing.
     next_object_: {fileID: 1395909716}
@@ -2746,12 +2655,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: "You sit near the back of the group. \nThe team lead says he called he meeting
-    to brainstorm new ideas for the game.\nWhat do you do?"
+    to brainstorm new ideas for the game."
   option:
-  - option_text_: '"I had this idea..."'
+  - option_text_: '"I have this idea..."'
     next_object_: {fileID: 1517025197}
     not_interactable: 0
-  - option_text_: I'll just listen to everyone else, my idea isn't very good anyway..
+  - option_text_: I'll just listen to everyone else, I'm not confident my idea is
+      good enough anyway.
     next_object_: {fileID: 991962605}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
