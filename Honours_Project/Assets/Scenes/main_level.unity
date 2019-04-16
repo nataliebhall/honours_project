@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: You are attending a meetup for women in games. There is some time before
-    the scheduled speaker to talk to some of te attendees.
+    the scheduled speaker to talk to some of the attendees.
   option:
   - option_text_: Walk over to the women who appears to be telling a story.
     next_object_: {fileID: 979250468}
@@ -428,7 +428,7 @@ MonoBehaviour:
   - option_text_: '"Why have they started targeting you?"'
     next_object_: {fileID: 1559130404}
     not_interactable: 0
-  - option_text_: Keep listening
+  - option_text_: Keep listening.
     next_object_: {fileID: 1559130404}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -661,8 +661,8 @@ MonoBehaviour:
     to fix the problem for you while telling you what you were doing wrong in a patronising
     tone.
   option:
-  - option_text_: You're frustrated that he would do that when you were fine fixing
-      the problem yourself. But he has been here longer so you don't say anything.
+  - option_text_: "You're frustrated that he would do that when you were fine fixing
+      the problem yourself. \nBut he has been here longer so you don't say anything."
     next_object_: {fileID: 1173290868}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -720,7 +720,7 @@ MonoBehaviour:
 
     You agree with them.'
   option:
-  - option_text_: Why can't there be more variety in female characters?
+  - option_text_: Even when there are female characters, they are usually sexualised.
     next_object_: {fileID: 0}
     not_interactable: 1
   - option_text_: Read the next article
@@ -770,7 +770,7 @@ MonoBehaviour:
   text_: They sympathise with you and explain that recently this has started happening
     to them since they started presenting themselves as feminine.
   option:
-  - option_text_: You ask what sort of things they've experienced.
+  - option_text_: You ask about the sort of things they've experienced.
     next_object_: {fileID: 1391810129}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You decide to turn off your computer and go do something else instead.
+  text_: You decide to turn off your computer and do something else instead.
   option:
   - option_text_: Continue.
     next_object_: {fileID: 1843881923}
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   text_: You approach the woman sitting down. She is surrounded by a small group of
     other attendees. She is talking about her current situation involving online harassment.
   option:
-  - option_text_: I'll bring over a chair and listen to her.
+  - option_text_: Bring over a chair and listen to her.
     next_object_: {fileID: 403960296}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1055,9 +1055,9 @@ MonoBehaviour:
   text_: The meeting concludes. Afterwards, the team lead takes you to one side and
     asks you to contribute more to the conversation.
   option:
-  - option_text_: You don't want to complain about your fellow peers. "I'll try harder"
+  - option_text_: '"I''ll try harder" - You don''t want to complain about your coworkers. '
     next_object_: {fileID: 261998042}
-    not_interactable: 1
+    not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1069436773
 GameObject:
@@ -1196,8 +1196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: They start talking to you about their work.
   option:
-  - option_text_: '"I''ve been having some issues at work" - you explain the events
-      that have happened to you with collegues taking over your work space etc.'
+  - option_text_: You mention your coworker coming over and taking over your work.
     next_object_: {fileID: 869912259}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1394,9 +1393,9 @@ MonoBehaviour:
   text_: They say that one of the more common issues they face is being talked over
     in meetings.
   option:
-  - option_text_: '"That happens to me all the time!" - you continue talking to them
-      and comparing experiences until it''s time for the speaker''s presentation.'
-    next_object_: {fileID: 0}
+  - option_text_: "\"That happens to me all the time!\" - \nyou continue talking to
+      them and comparing experiences until it's time for the speaker's presentation."
+    next_object_: {fileID: 1966859152}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!114 &1361609105
@@ -1457,12 +1456,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: 'They say they no longer get head-hunted, they get less invitations for job
-    interviews and job offers are now for more juior positions even though they had
-    experience in senior roles. '
+  text_: 'They say they no longer get head-hunted for jobs, they get less invitations
+    for job interviews and job offers are now for more juior positions even though
+    they have experience in senior roles. '
   option:
-  - option_text_: You are quite shocked at the difference in their experiences but
-      keep listening.
+  - option_text_: You are shocked that they've experienced these things.
     next_object_: {fileID: 1319825719}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1557,11 +1555,11 @@ MonoBehaviour:
   text_: '"Major game franchise ''Ninja Club'' criticised for not including any female
     main characters in the latest installment"'
   option:
-  - option_text_: So many games don't have the option of a female playable character.
-      Women play games too!
+  - option_text_: "So many games don't have the option of being able to play as \na
+      female character, despite half of gamers being female."
     next_object_: {fileID: 0}
     not_interactable: 1
-  - option_text_: Okay so nothing good in the news...
+  - option_text_: Continue.
     next_object_: {fileID: 907566069}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1596,8 +1594,8 @@ MonoBehaviour:
   text_: '"Major game franchise criticised for not including any playable female characters
     in the latest installment"'
   option:
-  - option_text_: So many games don't have the option of being able to play as a female
-      character, despite half of gamers being female.
+  - option_text_: "So many games don't have the option of being able to play as \na
+      female character, despite half of gamers being female."
     next_object_: {fileID: 0}
     not_interactable: 1
   - option_text_: Read the next article.
@@ -1865,8 +1863,8 @@ MonoBehaviour:
     female representation in video games. It was met with backlash from a lot of male
     gamers who bombarded her with abusive messages. '
   option:
-  - option_text_: Another woman in the group says something similar happened to her.
-      You hear murmers of "me too" from the other attendees gathered around you.
+  - option_text_: "Another woman in the group says something similar happened to her.
+      \nYou hear murmers of \"me too\" from the other attendees gathered around you."
     next_object_: {fileID: 1885223331}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1981,6 +1979,11 @@ Prefab:
         type: 2}
       propertyPath: text_
       value: Thank you for playing!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114070366804703104, guid: 25d7cffbc59da5448ae2ec1b27e38ac8,
+        type: 2}
+      propertyPath: option.Array.data[0].option_text_
+      value: Quit.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25d7cffbc59da5448ae2ec1b27e38ac8, type: 2}
@@ -2100,7 +2103,7 @@ Prefab:
     - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
         type: 2}
@@ -2110,22 +2113,27 @@ Prefab:
     - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 768.6
+      value: -0.3999939
       objectReference: {fileID: 0}
     - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -165.9
+      value: -128.4
       objectReference: {fileID: 0}
     - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 243.7
+      value: 168.6
       objectReference: {fileID: 0}
     - target: {fileID: 224570879902690450, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 1162.5
+      value: -125.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114067450047422528, guid: f19b6c9b26b433f45b0fe4ca6e7fda69,
+        type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f19b6c9b26b433f45b0fe4ca6e7fda69, type: 2}
@@ -2305,8 +2313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_: 'You walk up to the person at the bar.  '
   option:
-  - option_text_: Order a drink at the bar and introduce yourself to the person at
-      the bar.
+  - option_text_: Order a drink at the bar and introduce yourself to them.
     next_object_: {fileID: 1150352668}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -2552,8 +2559,9 @@ MonoBehaviour:
   text_: With tears in her eyes, she talks about having to change address, cancel
     bank cards and change her number due to the threats being made against her.
   option:
-  - option_text_: You notice she doesn't want to talk about it anymore, so leave her
-      alone with her friends.
+  - option_text_: 'You notice she doesn''t seem to want to talk about it anymore,
+
+      you leave the group and give her some space.'
     next_object_: {fileID: 1817282066}
     not_interactable: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
