@@ -13,24 +13,30 @@ public class event_ : MonoBehaviour
 
         public GameObject next_object_;
 
-        public bool not_interactable;
+        public bool is_pos_;
     }
 
+    // Text for description of the event
     [TextArea]
     public string text_;
 
-    public op[] option;
+    [TextArea]
+    public string thought_;
 
+    // Bool to determine if the options are important decisions
+    public bool is_decision = false;
+
+    // Array of options
+    public op[] option;
+    
+    // Array of positions for buttons of options
     Vector3[] positions_ = new Vector3[2];
 
+    // Button prefab
     public GameObject button;
 
+    // Array of instantiated buttons
     GameObject[] buttons = new GameObject[2];
-
-    // Use this for initialization
-    void Start ()
-    {
-    }
 
     public void InstantiateButtons()
     {
@@ -43,10 +49,10 @@ public class event_ : MonoBehaviour
             temp_button = Instantiate(button, positions_[i], Quaternion.identity, GameObject.FindWithTag("canvas").transform);
             temp_button.GetComponentInChildren<Text>().text = option[i].option_text_;
             temp_button.GetComponent<options_>().next_object = option[i].next_object_;
-            
-            if (option[i].not_interactable == true)
+            if (is_decision == true)
             {
-                temp_button.GetComponent<Button>().interactable = false;
+                temp_button.GetComponent<options_>().is_decision = true;
+                temp_button.GetComponent<options_>().is_pos = option[i].is_pos_;
             }
             
             buttons[i] = temp_button;

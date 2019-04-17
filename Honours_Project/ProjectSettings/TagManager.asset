@@ -4,12 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - dragable
-  - snapable
-  - command
-  - function
   - canvas
-  - text
+  - studio
+  - home
+  - conference
   layers:
   - Default
   - TransparentFX

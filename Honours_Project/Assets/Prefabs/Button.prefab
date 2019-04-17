@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 10
+    m_Left: 1
     m_Right: 10
     m_Top: 10
     m_Bottom: 10
@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   next_object: {fileID: 0}
+  is_decision: 0
+  is_pos: 0
 --- !u!114 &114496744509600690
 MonoBehaviour:
   m_ObjectHideFlags: 1
