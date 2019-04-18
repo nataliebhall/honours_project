@@ -149,7 +149,9 @@ MonoBehaviour:
   - option_text_: Continue.
     next_object_: {fileID: 96911308}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &2961400
 Transform:
   m_ObjectHideFlags: 0
@@ -173,7 +175,7 @@ GameObject:
   - component: {fileID: 39047780}
   - component: {fileID: 39047781}
   m_Layer: 0
-  m_Name: sub_event_5
+  m_Name: sub_event_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,7 +192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &39047781
 MonoBehaviour:
@@ -203,15 +205,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You turn off the game. Just before you go to switch off your console, you
-    get a message from one of the players in your team.
+  text_: Their comments become insulting and you decide to leave the game and join
+    a new lobby, this time without using your headset. Later, you notice you have
+    a message from someone you had been playing with.
   thought_: 
   is_decision: 0
   option:
-  - option_text_: Read the message.
+  - option_text_: You open the message.
     next_object_: {fileID: 1096624182}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &88900020
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +253,9 @@ MonoBehaviour:
   - option_text_: Continue.
     next_object_: {fileID: 96911308}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &88900022
 Transform:
   m_ObjectHideFlags: 0
@@ -298,7 +305,8 @@ MonoBehaviour:
   - option_text_: Quit.
     next_object_: {fileID: 0}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 0}
+  bottom_button: {fileID: 0}
 --- !u!4 &96911310
 Transform:
   m_ObjectHideFlags: 0
@@ -342,14 +350,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: He apologises and explains that he didn't intend to upset you. He happily
-    explains the problem and you learn how to fix the problem
+    explains the problem and you learn how to fix the issue as well as avoid it in
+    the future.
   thought_: 
   is_decision: 0
   option:
   - option_text_: Continue.
     next_object_: {fileID: 1173290868}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &124795091
 Transform:
   m_ObjectHideFlags: 0
@@ -399,7 +410,9 @@ MonoBehaviour:
   - option_text_: Continue.
     next_object_: {fileID: 96911308}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &207064852
 Transform:
   m_ObjectHideFlags: 0
@@ -449,7 +462,9 @@ MonoBehaviour:
   - option_text_: '--->'
     next_object_: {fileID: 1427039400}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &236268688
 Transform:
   m_ObjectHideFlags: 0
@@ -499,7 +514,9 @@ MonoBehaviour:
   - option_text_: Continue.
     next_object_: {fileID: 1833762526}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &261998044
 Transform:
   m_ObjectHideFlags: 0
@@ -573,7 +590,9 @@ MonoBehaviour:
   - option_text_: Walk over to the women who appears to be telling a story.
     next_object_: {fileID: 979250468}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &340834834
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,13 +700,12 @@ MonoBehaviour:
   thought_: 
   is_decision: 0
   option:
-  - option_text_: '"Why have they started targeting you?"'
-    next_object_: {fileID: 1559130404}
-    is_pos_: 0
   - option_text_: Keep listening.
     next_object_: {fileID: 1559130404}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &480926578
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,14 +746,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: '"OH MY GOD A GIRL!!"'
+  text_: You start talking to them about game strategy but before you finish your
+    sentence they start shouting down the mic "You're a girl!!"
   thought_: 
   is_decision: 0
   option:
-  - option_text_: '"uh yes I''m a girl.."'
+  - option_text_: You sigh and try to talk to them about the game again.
     next_object_: {fileID: 882821455}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &529807168
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +795,9 @@ MonoBehaviour:
   - option_text_: The article about a big games studio
     next_object_: {fileID: 861824432}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &529807170
 Transform:
   m_ObjectHideFlags: 0
@@ -831,7 +854,9 @@ MonoBehaviour:
       future of games.
     next_object_: {fileID: 1843881923}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &548409934
 Transform:
   m_ObjectHideFlags: 0
@@ -942,13 +967,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: THE STUDIO
-  thought_: asdff
+  thought_: 
   is_decision: 0
   option:
   - option_text_: Continue.
     next_object_: {fileID: 969390396}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &736893636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1031,9 @@ MonoBehaviour:
       he is much more experienced.
     next_object_: {fileID: 825861298}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &806517495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1070,9 @@ MonoBehaviour:
   - option_text_: Continue.
     next_object_: {fileID: 96911308}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &806517497
 Transform:
   m_ObjectHideFlags: 0
@@ -1091,7 +1122,9 @@ MonoBehaviour:
   - option_text_: Continue.
     next_object_: {fileID: 1173290868}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &825861300
 Transform:
   m_ObjectHideFlags: 0
@@ -1159,7 +1192,9 @@ MonoBehaviour:
   - option_text_: Read the next article
     next_object_: {fileID: 1407129807}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &869912259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1243,9 @@ MonoBehaviour:
   - option_text_: You ask about the sort of things they've experienced.
     next_object_: {fileID: 1391810129}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &882821455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,14 +1286,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: '"Is this your boyfriends account? I bet you don''t even play games!"'
+  text_: They start questioning you about the game to "test" your credibility. They
+    as if you're really a gamer or if this is your boyfriends account.
   thought_: 
   is_decision: 0
   option:
-  - option_text_: '"I''m playing right now, this is my account"'
-    next_object_: {fileID: 1863815220}
+  - option_text_: You continue to ignore them even though their comments annoy you.
+    next_object_: {fileID: 39047779}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1001 &923589975
 Prefab:
   m_ObjectHideFlags: 0
@@ -1415,7 +1455,9 @@ MonoBehaviour:
   - option_text_: Bring over a chair and listen to her.
     next_object_: {fileID: 403960296}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &991962605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,7 +1509,9 @@ MonoBehaviour:
       interrupting you.
     next_object_: {fileID: 261998042}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1001 &1059863114
 Prefab:
   m_ObjectHideFlags: 0
@@ -1616,14 +1660,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: At the end of the meeting your team lead comes up to you and praises you
-    for handling the situation well.
+    for handling the situation well. He says he is going to talk to the colleague
+    about interrupting people to avoid it happening again.
   thought_: 
   is_decision: 0
   option:
   - option_text_: Continue.
     next_object_: {fileID: 261998042}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1096624182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,7 +1681,7 @@ GameObject:
   - component: {fileID: 1096624183}
   - component: {fileID: 1096624184}
   m_Layer: 0
-  m_Name: sub_event_6
+  m_Name: sub_event_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1651,7 +1698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833762527}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1096624184
 MonoBehaviour:
@@ -1664,15 +1711,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: '"Go back to the kitchen and make me a sandwich. You''re not a real gamer,
-    you''re just a stupid girl"'
+  text_: The message is filled with insults and vulgur threats. You report the account
+    but you know it wont be the last message you receive like this.
   thought_: 
   is_decision: 0
   option:
-  - option_text_: You report the message and turn the console off.
+  - option_text_: You go back to playing your game
     next_object_: {fileID: 1519538320}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1150352668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,7 +1769,9 @@ MonoBehaviour:
   - option_text_: You mention your coworker coming over and taking over your work.
     next_object_: {fileID: 869912259}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1173290868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,14 +1819,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: After lunch, your team lead calls for a meeting
+  text_: After lunch, your team lead calls for a meeting.
   thought_: 
   is_decision: 0
   option:
   - option_text_: Head over there now.
     next_object_: {fileID: 2136715839}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1179070709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,10 +1875,12 @@ MonoBehaviour:
   thought_: 
   is_decision: 0
   option:
-  - option_text_: Let's get to work...
+  - option_text_: You get to work.
     next_object_: {fileID: 1802302831}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1265977107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,7 +1917,9 @@ MonoBehaviour:
   - option_text_: '--->'
     next_object_: {fileID: 1822651311}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1265977109
 Transform:
   m_ObjectHideFlags: 0
@@ -1926,7 +1983,9 @@ MonoBehaviour:
       them and comparing experiences until it's time for the speaker's presentation."
     next_object_: {fileID: 1966859152}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!114 &1361609105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,7 +2005,9 @@ MonoBehaviour:
   - option_text_: Head over to your workstation.
     next_object_: {fileID: 1179070709}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1391810129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,7 +2057,9 @@ MonoBehaviour:
   - option_text_: You are shocked that they've experienced these things.
     next_object_: {fileID: 1319825719}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1395909716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,10 +2104,12 @@ MonoBehaviour:
   thought_: 
   is_decision: 0
   option:
-  - option_text_: Connect your headset so you can talk with them.
+  - option_text_: You connect your headset so you can talk with them.
     next_object_: {fileID: 480926578}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1407129807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,7 +2165,9 @@ MonoBehaviour:
       future of games.
     next_object_: {fileID: 1843881923}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1417884252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2205,9 @@ MonoBehaviour:
   - option_text_: Read next article.
     next_object_: {fileID: 548409932}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1417884254
 Transform:
   m_ObjectHideFlags: 0
@@ -2190,7 +2259,9 @@ MonoBehaviour:
   - option_text_: '--->'
     next_object_: {fileID: 1265977107}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1420369248
 Transform:
   m_ObjectHideFlags: 0
@@ -2241,7 +2312,9 @@ MonoBehaviour:
   - option_text_: '--->'
     next_object_: {fileID: 1420369246}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1427039402
 Transform:
   m_ObjectHideFlags: 0
@@ -2298,18 +2371,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: Someone interrupts you with there idea.
+  text_: Someone interrupts you with their idea.
   thought_: 
   is_decision: 1
   option:
-  - option_text_: You wait until he's finished and continue what you are saying.
+  - option_text_: You wait until he's finished and continue what you were saying.
     next_object_: {fileID: 1069436773}
     is_pos_: 1
   - option_text_: You feel discouraged by them interrupting you and stay quiet for
       the rest of the meeting.
     next_object_: {fileID: 991962605}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1519538320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,7 +2421,9 @@ MonoBehaviour:
   - option_text_: Log on and open up the internet app.
     next_object_: {fileID: 529807168}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1519538322
 Transform:
   m_ObjectHideFlags: 0
@@ -2414,7 +2491,9 @@ MonoBehaviour:
       \nYou hear murmers of \"me too\" from the other attendees gathered around you."
     next_object_: {fileID: 1885223331}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1608351752
 Transform:
   m_ObjectHideFlags: 0
@@ -2480,7 +2559,9 @@ MonoBehaviour:
   - option_text_: '--->'
     next_object_: {fileID: 236268686}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1766170014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,10 +2689,12 @@ MonoBehaviour:
   thought_: 
   is_decision: 0
   option:
-  - option_text_: You ask one of the mid-level programmers to have a look.
+  - option_text_: You ask one of the other programmers to have a look.
     next_object_: {fileID: 736893636}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1817282066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2742,9 @@ MonoBehaviour:
   - option_text_: Order a drink at the bar and introduce yourself to them.
     next_object_: {fileID: 1150352668}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1822651311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,7 +2781,9 @@ MonoBehaviour:
   - option_text_: '--->'
     next_object_: {fileID: 96911308}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1822651313
 Transform:
   m_ObjectHideFlags: 0
@@ -2740,7 +2827,6 @@ Transform:
   - {fileID: 1395909717}
   - {fileID: 480926579}
   - {fileID: 882821456}
-  - {fileID: 1863815221}
   - {fileID: 39047780}
   - {fileID: 1096624183}
   m_Father: {fileID: 261998044}
@@ -2762,10 +2848,12 @@ MonoBehaviour:
   thought_: 
   is_decision: 0
   option:
-  - option_text_: Start Playing.
+  - option_text_: You start playing.
     next_object_: {fileID: 1395909716}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1843881923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,7 +2889,9 @@ MonoBehaviour:
   - option_text_: Continue.
     next_object_: {fileID: 282295964}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1843881925
 Transform:
   m_ObjectHideFlags: 0
@@ -2818,55 +2908,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1863815220
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1863815221}
-  - component: {fileID: 1863815222}
-  m_Layer: 0
-  m_Name: sub_event_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1863815221
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1863815220}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1833762527}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1863815222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1863815220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_: "Your character gets shot and you have to be revived by your team mates.
-    \n\n\"Stupid bitch fucking died! Girls can't play games, they're too fucking stupid\""
-  thought_: 
-  is_decision: 0
-  option:
-  - option_text_: '"What the hell?"'
-    next_object_: {fileID: 39047779}
-    is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1885223331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,7 +2958,9 @@ MonoBehaviour:
       you leave the group and give her some space.'
     next_object_: {fileID: 1817282066}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!1 &1966859152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,7 +2997,9 @@ MonoBehaviour:
   - option_text_: '--->'
     next_object_: {fileID: 1653881698}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}
 --- !u!4 &1966859154
 Transform:
   m_ObjectHideFlags: 0
@@ -3017,12 +3062,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: "You sit near the back of the group. \nThe team lead says he called he meeting
-    to brainstorm new ideas for the game."
+  text_: The team lead says he called he meeting to brainstorm new ideas for the game.
   thought_: 
   is_decision: 0
   option:
   - option_text_: You pitch your idea.
     next_object_: {fileID: 1517025197}
     is_pos_: 0
-  button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  top_button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
+  bottom_button: {fileID: 1390540756485190, guid: a602b70fffa353a4bbab4ec89c6f79a7,
+    type: 2}

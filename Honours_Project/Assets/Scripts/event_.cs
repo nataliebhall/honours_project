@@ -32,8 +32,9 @@ public class event_ : MonoBehaviour
     // Array of positions for buttons of options
     Vector3[] positions_ = new Vector3[2];
 
-    // Button prefab
-    public GameObject button;
+    // Button prefabs
+    public GameObject top_button;
+    public GameObject bottom_button;
 
     // Array of instantiated buttons
     GameObject[] buttons = new GameObject[2];
@@ -43,19 +44,30 @@ public class event_ : MonoBehaviour
         positions_[0] = new Vector3(-8.0f, -2.0f, 0.0f);
         positions_[1] = new Vector3(-8.0f, -3.0f, 0.0f);
 
-        for (int i = 0; i < option.Length; i++)
+        GameObject temp_button;
+        temp_button = Instantiate(top_button, GameObject.FindWithTag("canvas").transform);
+        temp_button.GetComponentInChildren<Text>().text = option[0].option_text_;
+        temp_button.GetComponent<options_>().next_object = option[0].next_object_;
+        if (is_decision == true)
         {
-            GameObject temp_button;
-            temp_button = Instantiate(button, positions_[i], Quaternion.identity, GameObject.FindWithTag("canvas").transform);
-            temp_button.GetComponentInChildren<Text>().text = option[i].option_text_;
-            temp_button.GetComponent<options_>().next_object = option[i].next_object_;
+            temp_button.GetComponent<options_>().is_decision = true;
+            temp_button.GetComponent<options_>().is_pos = option[0].is_pos_;
+        }
+            
+        buttons[0] = temp_button;
+
+        if (option.Length == 2)
+        {
+            temp_button = Instantiate(bottom_button, GameObject.FindWithTag("canvas").transform);
+            temp_button.GetComponentInChildren<Text>().text = option[1].option_text_;
+            temp_button.GetComponent<options_>().next_object = option[1].next_object_;
             if (is_decision == true)
             {
                 temp_button.GetComponent<options_>().is_decision = true;
-                temp_button.GetComponent<options_>().is_pos = option[i].is_pos_;
+                temp_button.GetComponent<options_>().is_pos = option[1].is_pos_;
             }
-            
-            buttons[i] = temp_button;
+
+            buttons[1] = temp_button;
         }
     }
 
