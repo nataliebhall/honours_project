@@ -18,7 +18,7 @@ public class game_controller : MonoBehaviour
     void Start ()
     {
         canvas_text_ = Instantiate(canvas_text, new Vector3(-8.0f, 2.0f, 0.0f), Quaternion.identity, GameObject.FindWithTag("canvas").transform);
-        thought_text_ = Instantiate(thought_text, new Vector3(-8.0f, 0.0f, 0.0f), Quaternion.identity, GameObject.FindWithTag("canvas").transform);
+        //thought_text_ = Instantiate(thought_text, new Vector3(-8.0f, 1.0f, 0.0f), Quaternion.identity, GameObject.FindWithTag("canvas").transform);
 
         current_object = first_object;
         SetUpNewEvent();
@@ -33,7 +33,7 @@ public class game_controller : MonoBehaviour
     {
         current_object.GetComponent<event_>().InstantiateButtons();
         canvas_text_.GetComponent<Text>().text = current_object.GetComponent<event_>().text_;
-        thought_text_.GetComponent<Text>().text = current_object.GetComponent<event_>().thought_;
+        //thought_text_.GetComponent<Text>().text = current_object.GetComponent<event_>().thought_;
     }
 
     public void ChangeObject(GameObject obj)

@@ -497,7 +497,7 @@ MonoBehaviour:
   is_decision: 0
   option:
   - option_text_: Continue.
-    next_object_: {fileID: 1519538320}
+    next_object_: {fileID: 1833762526}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &261998044
@@ -733,7 +733,7 @@ MonoBehaviour:
   is_decision: 0
   option:
   - option_text_: '"uh yes I''m a girl.."'
-    next_object_: {fileID: 0}
+    next_object_: {fileID: 882821455}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &529807168
@@ -1459,11 +1459,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_: The meeting concludes. Afterwards, the team lead takes you to one side and
-    asks you to contribute more to the conversation.
+    asks you to contribute more during the conversation.
   thought_: 
-  is_decision: 1
+  is_decision: 0
   option:
-  - option_text_: '"I''ll try harder" - You don''t want to complain about your coworkers. '
+  - option_text_: You agree that you will try harder and don't mention your colleague
+      interrupting you.
     next_object_: {fileID: 261998042}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -1614,12 +1615,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: You continue to be interrupted and spoken over.
+  text_: At the end of the meeting your team lead comes up to you and praises you
+    for handling the situation well.
   thought_: 
   is_decision: 0
   option:
-  - option_text_: Give up trying to get your voice heard.
-    next_object_: {fileID: 991962605}
+  - option_text_: Continue.
+    next_object_: {fileID: 261998042}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!1 &1096624182
@@ -2296,14 +2298,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: Someone interupts you mid sentence. Everyone is listening to them now.
+  text_: Someone interrupts you with there idea.
   thought_: 
-  is_decision: 0
+  is_decision: 1
   option:
-  - option_text_: Maybe he didn't hear me? I'll try again once he is finished.
+  - option_text_: You wait until he's finished and continue what you are saying.
     next_object_: {fileID: 1069436773}
-    is_pos_: 0
-  - option_text_: I don't think anyone was interested in my idea. I'll just stay quiet.
+    is_pos_: 1
+  - option_text_: You feel discouraged by them interrupting you and stay quiet for
+      the rest of the meeting.
     next_object_: {fileID: 991962605}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -2605,7 +2608,7 @@ MonoBehaviour:
   thought_: 
   is_decision: 0
   option:
-  - option_text_: you ask one of the mid-level programmers to have a look.
+  - option_text_: You ask one of the mid-level programmers to have a look.
     next_object_: {fileID: 736893636}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
@@ -2796,7 +2799,7 @@ MonoBehaviour:
   is_decision: 0
   option:
   - option_text_: Continue.
-    next_object_: {fileID: 1966859152}
+    next_object_: {fileID: 282295964}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
 --- !u!4 &1843881925
@@ -3019,11 +3022,7 @@ MonoBehaviour:
   thought_: 
   is_decision: 0
   option:
-  - option_text_: '"I have this idea..."'
+  - option_text_: You pitch your idea.
     next_object_: {fileID: 1517025197}
-    is_pos_: 0
-  - option_text_: I'll just listen to everyone else, I'm not confident my idea is
-      good enough anyway.
-    next_object_: {fileID: 991962605}
     is_pos_: 0
   button: {fileID: 1545457355615962, guid: 614e2ad890b99314a8f8097dd145d8a6, type: 2}
