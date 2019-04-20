@@ -12,7 +12,6 @@ public class game_controller : MonoBehaviour
     public GameObject thought_text;
 
     GameObject canvas_text_;
-    GameObject thought_text_;
 
     // Use this for initialization
     void Start ()

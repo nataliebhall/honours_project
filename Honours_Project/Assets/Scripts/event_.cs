@@ -20,17 +20,11 @@ public class event_ : MonoBehaviour
     [TextArea]
     public string text_;
 
-    [TextArea]
-    public string thought_;
-
     // Bool to determine if the options are important decisions
     public bool is_decision = false;
 
     // Array of options
     public op[] option;
-    
-    // Array of positions for buttons of options
-    Vector3[] positions_ = new Vector3[2];
 
     // Button prefabs
     public GameObject top_button;
@@ -41,9 +35,6 @@ public class event_ : MonoBehaviour
 
     public void InstantiateButtons()
     {
-        positions_[0] = new Vector3(-8.0f, -2.0f, 0.0f);
-        positions_[1] = new Vector3(-8.0f, -3.0f, 0.0f);
-
         GameObject temp_button;
         temp_button = Instantiate(top_button, GameObject.FindWithTag("canvas").transform);
         temp_button.GetComponentInChildren<Text>().text = option[0].option_text_;

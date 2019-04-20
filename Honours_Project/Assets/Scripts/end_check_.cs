@@ -9,16 +9,24 @@ public class end_check_ : MonoBehaviour
     public GameObject end_3;
     public GameObject end_4;
 
-    public game_controller game_;
+    game_controller game_;
 
     int studio_pos = 0; //max 2
     int home_pos = 0;   //max 1
+
+    void Start()
+    {
+        game_ = GameObject.Find("game_controller").GetComponent<game_controller>();
+    }
 
     public void Decision(GameObject next_object, bool is_pos)
     {
         if (game_.current_object.tag == "studio")
         {
-            studio_pos++;
+            if (is_pos)
+            {
+                studio_pos++;
+            }
         }
         else if (game_.current_object.tag == "home")
         {
