@@ -22,7 +22,7 @@ public class game_controller : MonoBehaviour
     void Start ()
     {
         // Instantiate the canvas text
-        canvas_text = Instantiate(canvas_text, GameObject.FindWithTag("canvas").transform);
+        canvas_text = Instantiate(canvas_text_, GameObject.FindWithTag("canvas").transform);
         
         // Set the current object as the first object then set up the new event
         current_object = first_object;

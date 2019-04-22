@@ -14,8 +14,8 @@ public class end_check_ : MonoBehaviour
     game_controller game_;
 
     // Integer variables to store the amount of positive options the player has chosen
-    int studio_pos = 0; //max 2
-    int home_pos = 0;   //max 1
+    public int studio_pos = 0; //max 2
+    public int home_pos = 0;   //max 1
 
     void Start()
     {
@@ -43,10 +43,13 @@ public class end_check_ : MonoBehaviour
                 home_pos++;
             }
             // If not positive then it checks if studio variable + home variable are equal to 0
-            else if (studio_pos + home_pos == 0)
+            if (studio_pos == 0)
             {
-                // If they are not then no positive options have been selected and the first ending is triggered
-                next_object = end_1;
+                if (home_pos == 0)
+                {
+                    // If they are not then no positive options have been selected and the first ending is triggered
+                    next_object = end_1;
+                }
             }
         }
         else if (game_.current_object.tag == "conference")
