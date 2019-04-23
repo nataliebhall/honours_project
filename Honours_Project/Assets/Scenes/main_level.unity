@@ -724,7 +724,7 @@ MonoBehaviour:
   text_: There are two articles trending.
   is_decision: 0
   option:
-  - option_text_: Read the article about a a popular game.
+  - option_text_: Read the article about a popular game.
     next_object_: {fileID: 1417884252}
     is_pos_: 0
   - option_text_: Read the article about a big game studio.
@@ -783,7 +783,8 @@ MonoBehaviour:
 '
   is_decision: 1
   option:
-  - option_text_: Seeing this news motivates you to do better.
+  - option_text_: Seeing these news articles motivates you to make better games and
+      are hopeful the games industry can change.
     next_object_: {fileID: 1843881923}
     is_pos_: 1
   - option_text_: You're disheartened by this news and don't have much hope that the
@@ -1920,7 +1921,8 @@ MonoBehaviour:
     in the latest installment"'
   is_decision: 1
   option:
-  - option_text_: Seeing this news motivates you to do better.
+  - option_text_: Seeing these news articles motivates you to make better games and
+      are hopeful the games industry can change.
     next_object_: {fileID: 1843881923}
     is_pos_: 1
   - option_text_: You're disheartened by this news and don't have much hope that the
@@ -2439,8 +2441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfd91d5c85ad040adf1aca9aa5418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_: It's your day off and you decde to play a game. You turn on the console and
-    load up an online shooter.
+  text_: It's your day off and you decide to play a game. You turn on the console
+    and load up an online shooter.
   is_decision: 0
   option:
   - option_text_: You start playing.
